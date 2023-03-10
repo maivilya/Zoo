@@ -2,7 +2,7 @@ public abstract class Animal {
 
     private double weight;
     private double growth;
-    private String eyeColor;
+    private final String eyeColor;
 
     /**
      * Конструктор абстрактного животного
@@ -26,6 +26,14 @@ public abstract class Animal {
 
     public String getEyeColor() {
         return eyeColor;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public void setGrowth(double growth) {
+        this.growth = growth;
     }
 
     public abstract String voice();
