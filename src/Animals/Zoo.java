@@ -71,7 +71,7 @@ public class Zoo {
         Zoo.zoo.add(new Dog(breed, name, coatColor, weight, growth, eyeColor, isVaccinated, year, month, day, isTraining));
     }
 
-    /*public void addTiger(Scanner input) {
+    public void addTiger(Scanner input) {
         System.out.print("Вес: ");
         double weight = input.nextDouble();
         System.out.print("Рост: ");
@@ -87,7 +87,7 @@ public class Zoo {
         System.out.print("День нахождения: ");
         int day = input.nextInt();
         zoo.add(new Tiger(weight, growth, eyeColor, habitat, year, month, day));
-      }*/
+      }
 
     /*public void zooInfo(){
         Iterator<Animal> animalIterator = zoo.iterator();
