@@ -120,6 +120,9 @@ public class Zoo {
         zoo.add(new Chicken(weight, growth, eyeColor, flyHeight));
     }
 
+    /**
+     * Информация о всем зоопарке
+     */
     public void zooInfo() {
         Iterator<Animal> animalIterator = zoo.iterator();
         while(animalIterator.hasNext()) {
@@ -127,6 +130,9 @@ public class Zoo {
         }
     }
 
+    /**
+     * Удалить животного из зоопарка
+     */
     public void removeAnimal(int index) {
         if (index <= 0 || index > zoo.size()) {
             System.out.println("Неверный номер животного");
@@ -135,11 +141,25 @@ public class Zoo {
         }
     }
 
+    /**
+     * Информация о конкретном животном
+     */
     public void animalInfo(int index) {
         if (index <= 0 || index > zoo.size()) {
             System.out.println("Такого животного не существует");
         } else {
             System.out.println(zoo.get(index - 1));
+        }
+    }
+
+    /**
+     * Воспроизведение голоса конкретного животного
+     */
+    public void animalVoice(int index) {
+        if (index <= 0 || index > zoo.size()) {
+            System.out.println("Такого животного не существует");
+        } else {
+            System.out.println(zoo.get(index - 1).voice());
         }
     }
 }
