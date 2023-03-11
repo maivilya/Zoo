@@ -1,5 +1,7 @@
 package Animals;
+
 import Animals.Basics.Animal;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -8,6 +10,7 @@ import java.util.Scanner;
 public class Zoo {
 
     public static List<Animal> zoo = new ArrayList<>();
+
     static {
         zoo.add(new Cat());
         zoo.add(new Dog());
@@ -16,7 +19,7 @@ public class Zoo {
         zoo.add(new Chicken());
     }
 
-    /*public void addCat(Scanner input){
+    public void addCat(Scanner input) {
         System.out.print("Порода: ");
         String breed = input.next();
         System.out.print("Имя: ");
@@ -40,7 +43,7 @@ public class Zoo {
         System.out.print("День рождения: ");
         int day = input.nextInt();
         Zoo.zoo.add(new Cat(breed, name, coatColor, weight, growth, eyeColor, isVaccinated, year, month, day, isFur));
-    }*/
+    }
 
     /*public void addDog(Scanner input){
         System.out.print("Порода: ");
