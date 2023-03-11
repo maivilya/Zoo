@@ -128,6 +128,12 @@ public class Zoo {
     }
 
     public void removeAnimal(int index) {
-        zoo.remove(index);
+        if (index <= 0 || index > zoo.size()) {
+            System.out.println("Неверный номер животного");
+        } else {
+            zoo.remove(index - 1);
+        }
     }
+
+
 }
