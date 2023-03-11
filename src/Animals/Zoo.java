@@ -120,4 +120,11 @@ public class Zoo {
         double flyHeight = 1;
         zoo.add(new Chicken(weight, growth, eyeColor, flyHeight));
     }
+
+    public void zooInfo() {
+        Iterator<Animal> animalIterator = zoo.iterator();
+        while(animalIterator.hasNext()) {
+            System.out.println(animalIterator.next());
+        }
+    }
 }
