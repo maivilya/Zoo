@@ -130,6 +130,15 @@ public class Zoo {
         }
     }
 
+    public void zooInfoIndex() {
+        Iterator<Animal> animalIterator = zoo.iterator();
+        int index = 0;
+        while(animalIterator.hasNext()) {
+            System.out.print(++index + " ");
+            System.out.println(animalIterator.next());
+        }
+    }
+
     /**
      * Удалить животного из зоопарка
      */
