@@ -1,3 +1,7 @@
+package Animals;
+
+import Animals.Basics.Pet;
+
 public class Dog extends Pet {
 
     /**наличие дрессировки*/

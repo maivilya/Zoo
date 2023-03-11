@@ -1,3 +1,5 @@
+package Animals.TODO;
+
 public interface Weaselable {
     /**
      * Метод проявления ласки;

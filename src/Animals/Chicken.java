@@ -1,4 +1,8 @@
-public class Chicken extends Bird{
+package Animals;
+
+import Animals.Basics.Bird;
+
+public class Chicken extends Bird {
     /**
      * Параметризированный конструктор для создания курицы
      * @param weight    вес;

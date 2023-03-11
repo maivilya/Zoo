@@ -1,4 +1,8 @@
-public class Cat extends Pet{
+package Animals;
+
+import Animals.Basics.Pet;
+
+public class Cat extends Pet {
     /**наличие шерсти*/
     private boolean isFur;
 

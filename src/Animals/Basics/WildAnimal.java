@@ -1,7 +1,11 @@
+package Animals.Basics;
+
+import Animals.Basics.Animal;
+
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-public abstract class WildAnimal extends Animal{
+public abstract class WildAnimal extends Animal {
 
     /**место обитания*/
     private String habitat;

@@ -1,3 +1,5 @@
+package Animals.Basics;
+
 public abstract class Animal {
 
     private double weight;

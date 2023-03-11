@@ -1,4 +1,8 @@
-public abstract class Bird extends Animal{
+package Animals.Basics;
+
+import Animals.Basics.Animal;
+
+public abstract class Bird extends Animal {
 
     private double flyHeight;
 
@@ -7,10 +11,19 @@ public abstract class Bird extends Animal{
      * @param weight   вес;
      * @param growth   рост;
      * @param eyeColor цвет глаз;
+     * @param flyHeight высота полета
      */
-    protected Bird(double weight, double growth, String eyeColor, double flyHeigth) {
+    protected Bird(double weight, double growth, String eyeColor, double flyHeight) {
         super(weight, growth, eyeColor);
-        this.flyHeight = flyHeigth;
+        this.flyHeight = flyHeight;
+    }
+
+    public double getFlyHeight() {
+        return flyHeight;
+    }
+
+    public void setFlyHeight(double flyHeight) {
+        this.flyHeight = flyHeight;
     }
 
     public abstract String fly();

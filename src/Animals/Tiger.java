@@ -1,4 +1,8 @@
-public class Tiger extends WildAnimal{
+package Animals;
+
+import Animals.Basics.WildAnimal;
+
+public class Tiger extends WildAnimal {
 
     /**
      * Конструктор для создания тигра

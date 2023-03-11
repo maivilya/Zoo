@@ -1,7 +1,12 @@
+package Animals.Basics;
+
+import Animals.Basics.Animal;
+import Animals.TODO.Weaselable;
+
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-public abstract class Pet extends Animal implements Weaselable{
+public abstract class Pet extends Animal implements Weaselable {
 
     /**имя*/
     private String name;
@@ -51,7 +56,7 @@ public abstract class Pet extends Animal implements Weaselable{
     public abstract String weasel();
 
     public String train() {
-        return "Pet training";
+        return "Animals.Basics.Pet training";
     }
 
     @Override
