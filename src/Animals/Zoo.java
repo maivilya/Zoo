@@ -162,4 +162,13 @@ public class Zoo {
             System.out.println(zoo.get(index - 1).voice());
         }
     }
+
+    /**
+     * Воспроизведение голоса у всего зоопарка
+     */
+    public void zooVoice() {
+        for (Animal a: zoo) {
+            System.out.println(a.voice());
+        }
+    }
 }
