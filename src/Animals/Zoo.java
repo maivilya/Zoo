@@ -1,7 +1,6 @@
 package Animals;
 
 import Animals.Basics.Animal;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -126,5 +125,9 @@ public class Zoo {
         while(animalIterator.hasNext()) {
             System.out.println(animalIterator.next());
         }
+    }
+
+    public void removeAnimal(int index) {
+        zoo.remove(index);
     }
 }
