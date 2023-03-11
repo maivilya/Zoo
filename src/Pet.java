@@ -48,7 +48,11 @@ public abstract class Pet extends Animal implements Weaselable{
     public abstract String voice();
 
     @Override
-    public  abstract String weasel();
+    public abstract String weasel();
+
+    public String train() {
+        return "Pet training";
+    }
 
     @Override
     public String toString() {
