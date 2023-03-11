@@ -4,40 +4,40 @@ import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner userChoose = new Scanner(System.in);
         Zoo zoo = new Zoo();
-        showMenu(zoo, input);
-        input.close();
+        showMenu(zoo, userChoose);
+        userChoose.close();
     }
 
-    private static void showMenu(Zoo a, Scanner input) {
+    private static void showMenu(Zoo a, Scanner in) {
         System.out.print(menu());
-        int choose = input.nextInt();
+        int choose = in.nextInt();
         switch(choose){
             case 1:
-                addAnimal(a, input);
-                showMenu(a, input);
+                addAnimal(a, in);
+                showMenu(a, in);
             case 2:
                 a.zooInfoIndex();
-                removeAnimal(a, input);
-                showMenu(a, input);
+                removeAnimal(a, in);
+                showMenu(a, in);
             case 3:
-                infoAnimal(a, input);
-                showMenu(a, input);
+                infoAnimal(a, in);
+                showMenu(a, in);
             case 4:
-                animalVoice(a, input);
-                showMenu(a, input);
+                animalVoice(a, in);
+                showMenu(a, in);
             case 5:
                 a.zooInfo();
-                showMenu(a, input);
+                showMenu(a, in);
             case 6:
                 a.zooVoice();
-                showMenu(a, input);
+                showMenu(a, in);
             case 7:
                 break;
             default:
                 System.out.println(incorrectOperation());
-                showMenu(a, input);
+                showMenu(a, in);
         }
     }
 
@@ -68,46 +68,46 @@ public class Program {
                 Выберите пункт меню:\s""";
     }
 
-    private static void addAnimal(Zoo a, Scanner input) {
+    private static void addAnimal(Zoo a, Scanner in) {
         System.out.print(setAnimalMenu());
-        int choose = input.nextInt();
+        int choose = in.nextInt();
         switch (choose) {
             case 1:
-                a.addCat(input);
-                showMenu(a, input);
+                a.addCat(in);
+                showMenu(a, in);
             case 2:
-                a.addDog(input);
-                showMenu(a, input);
+                a.addDog(in);
+                showMenu(a, in);
             case 3:
-                a.addTiger(input);
-                showMenu(a, input);
+                a.addTiger(in);
+                showMenu(a, in);
             case 4:
-                a.addWolf(input);
-                showMenu(a, input);
+                a.addWolf(in);
+                showMenu(a, in);
             case 5:
-                a.addChicken(input);
-                showMenu(a, input);
+                a.addChicken(in);
+                showMenu(a, in);
             case 6:
-                showMenu(a, input);
+                showMenu(a, in);
         }
     }
 
-    private static void removeAnimal(Zoo a, Scanner input) {
+    private static void removeAnimal(Zoo a, Scanner in) {
         System.out.print("Кого вы хотите удалить из зоопарка?: ");
-        int choose = input.nextInt();
+        int choose = in.nextInt();
         a.removeAnimal(choose);
 
     }
 
-    private static void infoAnimal(Zoo a, Scanner input) {
+    private static void infoAnimal(Zoo a, Scanner in) {
         System.out.print("О каком животном вы хотите узнать: ");
-        int choose = input.nextInt();
+        int choose = in.nextInt();
         a.animalInfo(choose);
     }
 
-    private static void animalVoice(Zoo a, Scanner input) {
+    private static void animalVoice(Zoo a, Scanner in) {
         System.out.print("У какого животного издать звук: ");
-        int choose = input.nextInt();
+        int choose = in.nextInt();
         a.animalVoice(choose);
     }
 }
