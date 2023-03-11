@@ -135,5 +135,11 @@ public class Zoo {
         }
     }
 
-
+    public void animalInfo(int index) {
+        if (index <= 0 || index > zoo.size()) {
+            System.out.println("Такого животного не существует");
+        } else {
+            System.out.println(zoo.get(index - 1));
+        }
+    }
 }
