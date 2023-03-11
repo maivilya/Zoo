@@ -1,7 +1,5 @@
 package Animals.Basics;
 
-import Animals.Basics.Animal;
-
 public abstract class Bird extends Animal {
 
     private double flyHeight;

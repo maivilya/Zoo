@@ -1,7 +1,4 @@
 package Animals.Basics;
-
-import Animals.Basics.Animal;
-
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 

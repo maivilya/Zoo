@@ -1,8 +1,6 @@
 package Animals.Basics;
 
-import Animals.Basics.Animal;
 import Animals.TODO.Weaselable;
-
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
