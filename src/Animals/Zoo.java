@@ -108,4 +108,16 @@ public class Zoo {
         boolean isLeader = input.nextBoolean();
         zoo.add(new Wolf(weight, growth, eyeColor, habitat, year, month, day, isLeader));
     }
+
+    public void addChicken(Scanner input) {
+        System.out.print("Вес: ");
+        double weight = input.nextDouble();
+        System.out.print("Рост: ");
+        double growth = input.nextDouble();
+        System.out.print("Цвет глаз: ");
+        String eyeColor = input.next();
+        System.out.print("Курица не умеет летать: ");
+        double flyHeight = 1;
+        zoo.add(new Chicken(weight, growth, eyeColor, flyHeight));
+    }
 }
