@@ -59,7 +59,7 @@ public abstract class Pet extends Animal implements Weaselable {
 
     @Override
     public String toString() {
-        return String.format("%s\n" +
+        return String.format("Вид: %s\n" +
                         "Порода: %s\n" +
                         "Имя: %s\n" +
                         "Цвет шерсти: %s\n" +
