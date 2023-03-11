@@ -60,8 +60,8 @@ public abstract class Pet extends Animal implements Weaselable{
                         "Порода: %s\n" +
                         "Имя: %s\n" +
                         "Цвет шерсти: %s\n" +
-                        "Вес: %.1f kg\n" +
-                        "Рост: %.1f m\n" +
+                        "Вес: %.1f кг\n" +
+                        "Рост: %.1f м\n" +
                         "Цвет глаз: %s\n" +
                         "День рождения: %s-%s-%s\n" +
                         "Наличие прививок: %b\n",
