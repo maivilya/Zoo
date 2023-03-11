@@ -1,5 +1,4 @@
 package Animals;
-
 import Animals.Basics.WildAnimal;
 
 public class Wolf extends WildAnimal {
