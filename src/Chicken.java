@@ -11,6 +11,13 @@ public class Chicken extends Bird{
         super.setFlyHeight(0);
     }
 
+    /**
+     * Конструктор, создающий курицу по умолчанию.
+     */
+    public Chicken() {
+        this(3, 0.5, "Черный", 0);
+    }
+
     @Override
     public String voice() {
         return "Курица кукарекает кукареку";
