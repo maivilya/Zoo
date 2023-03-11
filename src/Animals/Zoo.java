@@ -89,10 +89,23 @@ public class Zoo {
         zoo.add(new Tiger(weight, growth, eyeColor, habitat, year, month, day));
       }
 
-    /*public void zooInfo(){
-        Iterator<Animal> animalIterator = zoo.iterator();
-        while(animalIterator.hasNext()) {
-            System.out.println(animalIterator.next());
-        }
-    }*/
+    public void addWolf(Scanner input) {
+        System.out.print("Вес: ");
+        double weight = input.nextDouble();
+        System.out.print("Рост: ");
+        double growth = input.nextDouble();
+        System.out.print("Цвет глаз: ");
+        String eyeColor = input.next();
+        System.out.print("Место обитания: ");
+        String habitat = input.next();
+        System.out.print("Год нахождения: ");
+        int year = input.nextInt();
+        System.out.print("Месяц нахождения: ");
+        int month = input.nextInt();
+        System.out.print("День нахождения: ");
+        int day = input.nextInt();
+        System.out.print("День нахождения: ");
+        boolean isLeader = input.nextBoolean();
+        zoo.add(new Wolf(weight, growth, eyeColor, habitat, year, month, day, isLeader));
+    }
 }
